@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.DialogInterface;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -13,28 +14,24 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
+    SwipeRefreshLayout mSwipeRefreshLayout;
+    WebView mywebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final SwipeRefreshLayout mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
 
-        final WebView mywebview = (WebView) findViewById(R.id.webView);
-        final ProgressBar pbar;
-        pbar = (ProgressBar)findViewById(R.id.progressBar);
-        pbar.setVisibility(View.VISIBLE);
-        mywebview.setWebViewClient(new WebViewClient(){
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                //pbar.setVisibility(View.GONE);
-            }
-        });
+        mywebview = (WebView) findViewById(R.id.webView);
+
+
+
         WebSettings webSettings = mywebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mywebview.loadUrl("http://www.aapnashow.com/video_lecture/login.php");
+        mywebview.setWebViewClient(new WebViewClient());
 
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -49,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
     @Override
     public void onBackPressed() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);

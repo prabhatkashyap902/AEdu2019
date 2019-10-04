@@ -16,19 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <FrameLayout
+            android:id="@+id/frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:visibility="visible"></ProgressBar>
             <WebView
                 android:id="@+id/webView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+
 
         </FrameLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
