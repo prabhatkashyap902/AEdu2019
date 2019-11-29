@@ -1,4 +1,4 @@
-package com.example.AcceleratorEdu2019;
+package com.Accelerator.AcceleratorEdu2019;
 
 import org.junit.Test;
 
