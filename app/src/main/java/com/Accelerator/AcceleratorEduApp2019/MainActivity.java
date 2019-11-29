@@ -1,4 +1,4 @@
-package com.Accelerator.AcceleratorEdu2019;
+package com.Accelerator.AcceleratorEduApp2019;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
@@ -25,7 +25,6 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import com.Accelerator.AcceleratorEdu2019.R;
 
 public class MainActivity extends AppCompatActivity {
     SwipeRefreshLayout mSwipeRefreshLayout;

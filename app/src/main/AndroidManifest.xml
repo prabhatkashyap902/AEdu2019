@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.Accelerator.AcceleratorEdu2019">
+    package="com.Accelerator.AcceleratorEduApp2019">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.Accelerator.AcceleratorEdu2019.Splash_screen"
+        <activity android:name="com.Accelerator.AcceleratorEduApp2019.Splash_screen"
             android:theme="@style/SplashTheme"
             android:configChanges="orientation|screenSize">
             <intent-filter>
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.Accelerator.AcceleratorEdu2019.MainActivity"
+            android:name="com.Accelerator.AcceleratorEduApp2019.MainActivity"
             android:configChanges="orientation|screenSize">
         </activity>
     </application>

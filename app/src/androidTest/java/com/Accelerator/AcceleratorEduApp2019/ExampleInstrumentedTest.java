@@ -1,4 +1,4 @@
-package com.Accelerator.AcceleratorEdu2019;
+package com.Accelerator.AcceleratorEduApp2019;
 
 import android.content.Context;
 

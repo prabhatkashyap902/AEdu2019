@@ -1,4 +1,4 @@
-package com.Accelerator.AcceleratorEdu2019;
+package com.Accelerator.AcceleratorEduApp2019;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.Accelerator.AcceleratorEdu2019.R;
 
 public class Splash_screen extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
